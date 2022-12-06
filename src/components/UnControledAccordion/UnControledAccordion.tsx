@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 
 type AccordionPropsType= {
     title: string
-
 }
 type accordionTitlePropsType={
     title: string
     onClick: ()=>void
 }
+
 export function UnControledAccordion(props:AccordionPropsType){
     let [coll, setColl]=useState(false)
 
@@ -17,9 +17,10 @@ export function UnControledAccordion(props:AccordionPropsType){
 
             {coll && <AccordionBody />}
         </div>
-    )
+    )}
 
-}
+
+
 
 
 function AccordionTitle(props:accordionTitlePropsType){
@@ -29,13 +30,13 @@ function AccordionTitle(props:accordionTitlePropsType){
     )
 }
 function AccordionBody(){
-    return (
-        <div>
-            <ul>
+            return(
+            <div>
+                <ul>
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
-            </ul>
-        </div>
-    )
+                </ul>
+            </div>
+            )
 }

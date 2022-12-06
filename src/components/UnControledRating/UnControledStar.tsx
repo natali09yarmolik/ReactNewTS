@@ -1,15 +1,13 @@
+
 import React, {useState} from 'react';
 
-type RatingTypesProps={
-    //value: number
-}
 type starPropsType={
     selected:boolean
     setValue:(value:1|2|3|4|5)=>void
-   //value: 1|2|3|4|5
+
 }
 
-function UncontroledRating(props:RatingTypesProps){
+export function UncontroledRating(){
     let [value, setValue]=useState(1)
     return (
         <div>
@@ -29,4 +27,6 @@ function Star(props:starPropsType){
         {props.selected ? <b> Star </b>: 'Star'}
     </span>
 }
-export default UncontroledRating;
+
+
+
