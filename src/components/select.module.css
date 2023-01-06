@@ -1,0 +1,30 @@
+.container{
+    margin-left: 20px;
+    font-family: BlinkMacSystemFont;
+    color: blueviolet;
+}
+.selectContainer{
+  width: 80px;
+  margin-top: -20px;
+
+}
+.select{
+    border: 1px solid #3beccc;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+.selectActive{
+    background-color: #eeeeb4;
+    color:mediumvioletred;
+    border: 1px solid #3beccc;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+h3{
+    width: 80px;
+    border: 1px solid #3beccc;
+    text-align: center;
+    border-radius: 5px;
+}

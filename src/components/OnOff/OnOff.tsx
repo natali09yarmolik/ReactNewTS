@@ -8,9 +8,7 @@ type onOffPropsType={
     onChange: (on:boolean)=>void
 }
 
-export const OnOff=(props:onOffPropsType)=>{
-
-  //  let [active, setActive]=useState(true)
+const OnOffFirst=(props:onOffPropsType)=>{
 
 const onStyle={
     display: 'inline-block',
@@ -50,3 +48,4 @@ const indicator={
     )
 }
 
+export const OnOff=React.memo(OnOffFirst)

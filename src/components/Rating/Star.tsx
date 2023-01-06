@@ -15,7 +15,7 @@ type starPropsType={
 }
 
 
-function Rating(props:RatingTypesProps){
+const  Rating=(props:RatingTypesProps)=>{
 
 
     return (
