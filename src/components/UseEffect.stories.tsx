@@ -7,11 +7,11 @@ export default {
 
 
 export function ExampleUseEffect() {
-    console.log('useEffect')
+
 
     const [counter, setCounter] = useState(1)
     useEffect(()=>{
-        console.log('Effect')
+
     })
        return <>
            Hello, {counter}
@@ -21,7 +21,7 @@ export function ExampleUseEffect() {
 }
 
 export function ExampleSetTimeout() {
-    console.log('setTimeout')
+
 
     /*const [fake, setFake]=useState(1)*/
     const [counter, setCounter] = useState(1)
@@ -43,5 +43,26 @@ export function ExampleSetTimeout() {
      {/*   <button onClick={() => setCounter(counter + 1)}>counter +</button>
         <button onClick={() => setFake(fake + 1)}>fake +</button>{fake}
 */}
+    </>
+}
+
+export function KeysTrackerExample() {
+    console.log('setTimeout')
+
+
+    const [text, setText] = useState('')
+    console.log('Component render with'+text)
+
+    useEffect(()=>{
+        const handler=(e:KeyboardEvent)=>setText((state)=>state+e.key)
+        window.addEventListener('keypress', handler)
+
+return ()=>window.removeEventListener('keypress', handler)
+
+     },[] )
+
+
+    return <>
+Typed text: {text}
     </>
 }
